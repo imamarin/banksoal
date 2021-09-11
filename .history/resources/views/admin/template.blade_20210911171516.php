@@ -449,19 +449,15 @@
 <script src="{{ asset('/assets/select2/js/select2.full.min.js') }}"></script>
 
   <script type="text/javascript">
-    $(function () {
+      $(function () {
     //Initialize Select2 Elements
-		$('.select2').select2({
-			
-		});
+            $('.select2').select2()
 
-		//Initialize Select2 Elements
-		$('.select2bs4').select2({
-			theme: 'bootstrap4'
-		})
-
-		console.log($('.select2').select2());
-	});
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+              theme: 'bootstrap4'
+            })
+        });
   </script>
 <!-- Azzara DEMO methods, don't include it in your project! -->
 {{-- <script src="{{ asset('/assets/js/setting-demo.js') }}"></script>

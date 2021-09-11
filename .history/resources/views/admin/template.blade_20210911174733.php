@@ -451,16 +451,14 @@
   <script type="text/javascript">
     $(function () {
     //Initialize Select2 Elements
-		$('.select2').select2({
-			
-		});
+		$('.select2').select2()
 
 		//Initialize Select2 Elements
 		$('.select2bs4').select2({
 			theme: 'bootstrap4'
 		})
 
-		console.log($('.select2').select2());
+		console.log(select2());
 	});
   </script>
 <!-- Azzara DEMO methods, don't include it in your project! -->

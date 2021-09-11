@@ -8,7 +8,8 @@
 
 	<!-- Fonts and icons -->
 	<script src="{{ asset('/assets/js/plugin/webfont/webfont.min.js') }}"></script>
-	
+	<link rel="stylesheet" href="{{ asset('/assets/select2/css/select2.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('/assets/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
 	<script>
 		WebFont.load({
 			google: {"families":["Open+Sans:300,400,600,700"]},
@@ -22,9 +23,7 @@
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('/assets/css/azzara.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('/assets/bootstrap4.css') }}">
-	<link rel="stylesheet" href="{{ asset('/assets/select2/css/select2.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('/assets/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
+
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link rel="stylesheet" href="{{ asset('/assets/css/demo.css') }}">
 </head>
@@ -449,19 +448,15 @@
 <script src="{{ asset('/assets/select2/js/select2.full.min.js') }}"></script>
 
   <script type="text/javascript">
-    $(function () {
+      $(function () {
     //Initialize Select2 Elements
-		$('.select2').select2({
-			
-		});
+            $('.select2').select2()
 
-		//Initialize Select2 Elements
-		$('.select2bs4').select2({
-			theme: 'bootstrap4'
-		})
-
-		console.log($('.select2').select2());
-	});
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+              theme: 'bootstrap4'
+            })
+        });
   </script>
 <!-- Azzara DEMO methods, don't include it in your project! -->
 {{-- <script src="{{ asset('/assets/js/setting-demo.js') }}"></script>
