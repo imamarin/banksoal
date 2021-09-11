@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
+class MatpelController extends Controller
+{
+    //
+
+    public function index(){
+        $data = array(
+            "matpel" => DB::table('matpel')->get()
+        );
+        return view('admin/guru')->with($data);
+    }
+}
